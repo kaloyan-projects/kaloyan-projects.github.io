@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="368.22299mm"
+   height="159.69592mm"
+   viewBox="0 0 368.22299 159.69592"
+   version="1.1"
+   id="svg1"
+   inkscape:export-filename="logo.png"
+   inkscape:export-xdpi="35.061745"
+   inkscape:export-ydpi="35.061745"
+   inkscape:version="1.3.2 (091e20ef0f, 2023-11-25)"
+   sodipodi:docname="logo.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#505050"
+     bordercolor="#eeeeee"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     inkscape:zoom="0.59468254"
+     inkscape:cx="432.16335"
+     inkscape:cy="271.57347"
+     inkscape:window-width="1366"
+     inkscape:window-height="696"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs1">
+    <inkscape:perspective
+       sodipodi:type="inkscape:persp3d"
+       inkscape:vp_x="17.423051 : 268.74966 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_z="192.85711 : 267.52261 : 1"
+       inkscape:persp3d-origin="105 : 180.09185 : 1"
+       id="perspective16" />
+    <filter
+       style="color-interpolation-filters:sRGB"
+       inkscape:label="Drop Shadow"
+       id="filter94"
+       x="-0.026534523"
+       y="-0.12801588"
+       width="1.0713503"
+       height="1.3436617">
+      <feFlood
+         result="flood"
+         in="SourceGraphic"
+         flood-opacity="0.749020"
+         flood-color="rgb(19,19,19)"
+         id="feFlood93" />
+      <feGaussianBlur
+         result="blur"
+         in="SourceGraphic"
+         stdDeviation="1.400000"
+         id="feGaussianBlur93" />
+      <feOffset
+         result="offset"
+         in="blur"
+         dx="2.314907"
+         dy="2.300000"
+         id="feOffset93" />
+      <feComposite
+         result="comp1"
+         operator="in"
+         in="flood"
+         in2="offset"
+         id="feComposite93" />
+      <feComposite
+         result="comp2"
+         operator="over"
+         in="SourceGraphic"
+         in2="comp1"
+         id="feComposite94" />
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB"
+       inkscape:label="Drop Shadow"
+       id="filter96"
+       x="-0.027321896"
+       y="-0.14924596"
+       width="1.0734675"
+       height="1.4006543">
+      <feFlood
+         result="flood"
+         in="SourceGraphic"
+         flood-opacity="0.749020"
+         flood-color="rgb(19,19,19)"
+         id="feFlood94" />
+      <feGaussianBlur
+         result="blur"
+         in="SourceGraphic"
+         stdDeviation="1.400000"
+         id="feGaussianBlur94" />
+      <feOffset
+         result="offset"
+         in="blur"
+         dx="2.314907"
+         dy="2.300000"
+         id="feOffset94" />
+      <feComposite
+         result="comp1"
+         operator="in"
+         in="flood"
+         in2="offset"
+         id="feComposite95" />
+      <feComposite
+         result="comp2"
+         operator="over"
+         in="SourceGraphic"
+         in2="comp1"
+         id="feComposite96" />
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB"
+       inkscape:label="Drop Shadow"
+       id="filter98"
+       x="-0.048379273"
+       y="-0.045410516"
+       width="1.13009"
+       height="1.1219056">
+      <feFlood
+         result="flood"
+         in="SourceGraphic"
+         flood-opacity="0.749020"
+         flood-color="rgb(19,19,19)"
+         id="feFlood96" />
+      <feGaussianBlur
+         result="blur"
+         in="SourceGraphic"
+         stdDeviation="1.400000"
+         id="feGaussianBlur96" />
+      <feOffset
+         result="offset"
+         in="blur"
+         dx="2.314907"
+         dy="2.300000"
+         id="feOffset96" />
+      <feComposite
+         result="comp1"
+         operator="in"
+         in="flood"
+         in2="offset"
+         id="feComposite97" />
+      <feComposite
+         result="comp2"
+         operator="over"
+         in="SourceGraphic"
+         in2="comp1"
+         id="feComposite98" />
+    </filter>
+  </defs>
+  <g
+     inkscape:label="Слой 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-82.599492,-98.350279)">
+    <path
+       id="path98"
+       style="fill:#000000;stroke-width:0.499998"
+       d="m 160.45312,100.94922 c -24.89267,9.01462 -49.79249,18.01367 -74.687495,27.02344 0,27.39453 0,54.78906 0,82.18359 24.963655,13.73873 49.926905,27.47818 74.890625,41.2168 24.96501,-13.73863 49.92958,-27.47806 74.89453,-41.2168 0,-27.39453 0,-54.78906 0,-82.18359 -24.97166,-9.03154 -49.94407,-18.06102 -74.91601,-27.0918 l -0.0936,0.0352 z" />
+    <rect
+       style="fill:#1a1a1a;fill-opacity:1;stroke-width:0.243955;filter:url(#filter96)"
+       id="rect27"
+       width="122.97829"
+       height="22.513172"
+       x="133.48376"
+       y="141.29221"
+       transform="matrix(2.0495524,0,0,2.0495524,-93.92019,-110.00795)" />
+    <rect
+       style="fill:#333333;fill-opacity:1;stroke-width:0.243955;filter:url(#filter94)"
+       id="rect26"
+       width="126.62749"
+       height="26.246744"
+       x="133.48376"
+       y="115.04546"
+       transform="matrix(2.0495524,0,0,2.0495524,-93.92019,-110.00795)" />
+    <g
+       id="g24"
+       transform="matrix(2.0495427,0,0,1.9237769,-93.919324,-96.82489)"
+       style="stroke-width:0.503608;filter:url(#filter98)">
+      <path
+         id="rect21"
+         style="fill:#cccccc;stroke-width:0.251804"
+         d="m 89.485952,118.19415 34.725668,20.35986 v 40.25182 L 89.485952,158.44598 Z" />
+      <path
+         id="rect22"
+         style="fill:#808080;stroke-width:0.251804"
+         d="M 158.93727,118.19414 124.21161,138.554 v 40.25183 l 34.72566,-20.35986 z" />
+      <path
+         id="rect23"
+         style="fill:#ffffff;stroke-width:0.251804"
+         inkscape:transform-center-x="-34.02992"
+         inkscape:transform-center-y="-1.0456904"
+         d="m 89.485952,118.19415 34.725658,20.35986 34.72567,-20.35986 -34.72567,-13.37999 z"
+         sodipodi:nodetypes="ccccc" />
+    </g>
+    <text
+       xml:space="preserve"
+       style="font-weight:800;font-size:138.613px;line-height:1;font-family:'Open Sans';-inkscape-font-specification:'Open Sans Ultra-Bold';text-decoration-color:#000000;letter-spacing:14.8514px;word-spacing:0px;text-orientation:upright;white-space:pre;mix-blend-mode:difference;fill:#b2b2b2;fill-opacity:1;stroke-width:0.499996"
+       x="113.66824"
+       y="216.57515"
+       id="text24"><tspan
+         sodipodi:role="line"
+         id="tspan24"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:'Sofia Sans';-inkscape-font-specification:'Sofia Sans Bold';fill:#b2b2b2;fill-opacity:1;stroke-width:0.499999"
+         x="113.66824"
+         y="216.57515">К</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:52.0586px;line-height:1;font-family:'Sofia Sans';-inkscape-font-specification:'Sofia Sans Bold';text-decoration-color:#000000;letter-spacing:0px;word-spacing:0px;text-orientation:upright;white-space:pre;fill:#ffffff;fill-opacity:1;stroke-width:0.499999"
+       x="256.43979"
+       y="166.69344"
+       id="text25"><tspan
+         sodipodi:role="line"
+         id="tspan25"
+         style="font-size:52.0586px;letter-spacing:0px;fill:#ffffff;fill-opacity:1;stroke-width:0.500001"
+         x="256.43979"
+         y="166.69344"
+         rotate="0 0 0 0 0 0 0">Калоян</tspan><tspan
+         sodipodi:role="line"
+         style="font-size:52.0586px;letter-spacing:0px;fill:#ffffff;fill-opacity:1;stroke-width:0.500001"
+         x="256.43979"
+         y="218.75204"
+         id="tspan26"
+         rotate="0 0 0 0 0 0 0">Иванов</tspan></text>
+  </g>
+</svg>
