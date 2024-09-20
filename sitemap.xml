@@ -5,8 +5,12 @@
 <loc>https://kaloyan-projects.github.io/</loc>
 </url>
 <url>
-<loc>https://kaloyan-projects.github.io/galeriya-gallery/</loc>
-<lastmod>2024-09-20T12:54:18+03:00</lastmod>
+<loc>https://kaloyan-projects.github.io/about-me/</loc>
+<lastmod>2024-09-20T13:06:07+03:00</lastmod>
+</url>
+<url>
+<loc>https://kaloyan-projects.github.io/gallery/</loc>
+<lastmod>2024-09-20T13:05:58+03:00</lastmod>
 <image:image>
 <image:loc>https://kaloyan-projects.github.io/media/posts/3/gallery/abstract-thumbnail.jpg</image:loc>
 <image:title><![CDATA[]]></image:title>
@@ -99,9 +103,5 @@
 <image:loc>https://kaloyan-projects.github.io/media/posts/3/gallery/grub-menu-2-thumbnail.png</image:loc>
 <image:title><![CDATA[]]></image:title>
 </image:image>
-</url>
-<url>
-<loc>https://kaloyan-projects.github.io/za-men-about-me/</loc>
-<lastmod>2024-09-20T11:04:24+03:00</lastmod>
 </url>
 </urlset>
