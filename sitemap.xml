@@ -6,7 +6,7 @@
 </url>
 <url>
 <loc>https://kaloyan-projects.github.io/about-me/</loc>
-<lastmod>2024-09-24T22:11:59+03:00</lastmod>
+<lastmod>2024-09-26T13:46:45+03:00</lastmod>
 </url>
 <url>
 <loc>https://kaloyan-projects.github.io/gallery/</loc>
@@ -123,5 +123,9 @@
 <image:loc>https://kaloyan-projects.github.io/media/posts/3/gallery/notes-2-thumbnail.png</image:loc>
 <image:title><![CDATA[]]></image:title>
 </image:image>
+</url>
+<url>
+<loc>https://kaloyan-projects.github.io/other/</loc>
+<lastmod>2024-09-26T14:39:42+03:00</lastmod>
 </url>
 </urlset>
