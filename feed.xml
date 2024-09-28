@@ -3,10 +3,38 @@
     <title>Портфолио на Калоян</title>
     <link href="https://kaloyan-projects.github.io/feed.xml" rel="self" />
     <link href="https://kaloyan-projects.github.io" />
-    <updated>1970-01-01T02:00:00+02:00</updated>
+    <updated>2024-09-28T19:13:19+03:00</updated>
     <author>
         <name>Калоян</name>
     </author>
     <id>https://kaloyan-projects.github.io</id>
 
+    <entry>
+        <title>Първи пост</title>
+        <author>
+            <name>Калоян</name>
+        </author>
+        <link href="https://kaloyan-projects.github.io/prvi-post/"/>
+        <id>https://kaloyan-projects.github.io/prvi-post/</id>
+        <media:content url="https://kaloyan-projects.github.io/media/posts/5/first-post-2.png" medium="image" />
+            <category term="Мета"/>
+
+        <updated>2024-09-28T18:48:32+03:00</updated>
+            <summary>
+                <![CDATA[
+                        <img src="https://kaloyan-projects.github.io/media/posts/5/first-post-2.png" alt="" />
+                    Никога преди не съм правил постове, но този би трябвало да се&hellip;
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                    <p><img src="https://kaloyan-projects.github.io/media/posts/5/first-post-2.png" class="type:primaryImage" alt="" /></p>
+                <p>Никога преди не съм правил постове, но този би трябвало да се вижда на началната страница. Още разучавам тънкостите на <a href="https://getpublii.com/">Publii</a> и възможностите при създаване на страници. Смятам тук да си направя портфолио и да качвам мои неща.</p>
+<hr>
+<pre class="language-java"><code>public static void main(String args[]) {
+	System.out.println("Hello world!");
+}</code></pre>
+            ]]>
+        </content>
+    </entry>
 </feed>
