@@ -3,7 +3,7 @@
     <title>Портфолио на Калоян</title>
     <link href="https://kaloyan-projects.github.io/feed.xml" rel="self" />
     <link href="https://kaloyan-projects.github.io" />
-    <updated>2024-09-28T19:13:19+03:00</updated>
+    <updated>2024-09-29T12:56:46+03:00</updated>
     <author>
         <name>Калоян</name>
     </author>
@@ -14,8 +14,8 @@
         <author>
             <name>Калоян</name>
         </author>
-        <link href="https://kaloyan-projects.github.io/prvi-post/"/>
-        <id>https://kaloyan-projects.github.io/prvi-post/</id>
+        <link href="https://kaloyan-projects.github.io/first-post/"/>
+        <id>https://kaloyan-projects.github.io/first-post/</id>
         <media:content url="https://kaloyan-projects.github.io/media/posts/5/first-post-2.png" medium="image" />
             <category term="Мета"/>
 

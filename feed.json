@@ -11,8 +11,8 @@
     },
     "items": [
         {
-            "id": "https://kaloyan-projects.github.io/prvi-post/",
-            "url": "https://kaloyan-projects.github.io/prvi-post/",
+            "id": "https://kaloyan-projects.github.io/first-post/",
+            "url": "https://kaloyan-projects.github.io/first-post/",
             "title": "Първи пост",
             "summary": "Никога преди не съм правил постове, но този би трябвало да се&hellip;",
             "content_html": "<p>Никога преди не съм правил постове, но този би трябвало да се вижда на началната страница. Още разучавам тънкостите на <a href=\"https://getpublii.com/\">Publii</a> и възможностите при създаване на страници. Смятам тук да си направя портфолио и да качвам мои неща.</p>\n<hr>\n<pre class=\"language-java\"><code>public static void main(String args[]) {\n\tSystem.out.println(\"Hello world!\");\n}</code></pre>",
@@ -24,7 +24,7 @@
                    "Мета"
             ],
             "date_published": "2024-09-28T18:48:32+03:00",
-            "date_modified": "2024-09-28T19:13:19+03:00"
+            "date_modified": "2024-09-29T12:56:46+03:00"
         }
     ]
 }
