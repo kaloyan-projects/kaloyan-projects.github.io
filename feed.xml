@@ -3,12 +3,322 @@
     <title>Портфолио на Калоян</title>
     <link href="https://kaloyan-projects.github.io/feed.xml" rel="self" />
     <link href="https://kaloyan-projects.github.io" />
-    <updated>2024-09-29T15:47:31+03:00</updated>
+    <updated>2024-09-30T14:56:23+03:00</updated>
     <author>
         <name>Калоян</name>
     </author>
     <id>https://kaloyan-projects.github.io</id>
 
+    <entry>
+        <title>8 програми за командния ред на Линукс</title>
+        <author>
+            <name>Калоян</name>
+        </author>
+        <link href="https://kaloyan-projects.github.io/10-instrumenti-za-komandniya-red-na-linuks/"/>
+        <id>https://kaloyan-projects.github.io/10-instrumenti-za-komandniya-red-na-linuks/</id>
+        <media:content url="https://kaloyan-projects.github.io/media/posts/9/post-thumbnail-3.png" medium="image" />
+            <category term="Списък"/>
+            <category term="Любопитно"/>
+            <category term="Линукс"/>
+
+        <updated>2024-09-30T12:07:08+03:00</updated>
+            <summary>
+                <![CDATA[
+                        <img src="https://kaloyan-projects.github.io/media/posts/9/post-thumbnail-3.png" alt="" />
+                    1. Uniutils Uniutils предоставя полезни команди за работа със знаци от Unicode.
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                    <p><img src="https://kaloyan-projects.github.io/media/posts/9/post-thumbnail-3.png" class="type:primaryImage" alt="" /></p>
+                <h3>1. Uniutils</h3>
+<p>Uniutils предоставя полезни команди за работа със знаци от Unicode. С този инструмент може да се провери числовата стойност на всеки знак, както е в Unicode таблицата, заедно с неговото име и кодировка или пък да проверим за честотата на знаците в даден текст. Пакетът може да се инсталира със следната команда на Ubuntu базирани дистрибуции:</p>
+<pre class="language-bash line-numbers"><code>apt install uniutils</code></pre>
+<p>Една от командите, които Uniutils предоставя е <em><strong>uniname</strong></em>. Ето как може да я използваме, за да проверим информацията за следния текст:</p>
+<pre class="language-bash line-numbers"><code>echo "Текст." | uniname
+:'
+Резултат:
+No LINES variable in environment so unable to determine lines per page.
+Using default of 24.
+character  byte       UTF-32   encoded as     glyph   name
+        0          0  000422   D0 A2          Т      CYRILLIC CAPITAL LETTER TE
+        1          2  000435   D0 B5          е      CYRILLIC SMALL LETTER IE
+        2          4  00043A   D0 BA          к      CYRILLIC SMALL LETTER KA
+        3          6  000441   D1 81          с      CYRILLIC SMALL LETTER ES
+        4          8  000442   D1 82          т      CYRILLIC SMALL LETTER TE
+        5         10  00002E   2E             .      FULL STOP
+        6         11  00000A   0A                     LINE FEED (LF)
+
+'</code></pre>
+<p>С друга команда, unihist, може да видим хистограма (честотата) на въведените символи във втората колона:</p>
+<pre class="language-bash line-numbers"><code>echo 'Това изречение съдържа буквата "а" 7 пъти и буквата "и" 6 пъти' | unihist
+:'
+Резултат:
+	  1,587	       1	0x00000A
+	 17,460	      11	0x000020
+	  6,349	       4	0x000027	"
+	  1,587	       1	0x000036	6
+	  1,587	       1	0x000037	7
+	  1,587	       1	0x000422	Т
+	 11,111	       7	0x000430	а
+	  3,175	       2	0x000431	б
+	  4,762	       3	0x000432	в
+	  1,587	       1	0x000434	д
+	  4,762	       3	0x000435	е
+	  1,587	       1	0x000436	ж
+	  1,587	       1	0x000437	з
+	  9,524	       6	0x000438	и
+	  3,175	       2	0x00043A	к
+	  1,587	       1	0x00043D	н
+	  1,587	       1	0x00043E	о
+	  3,175	       2	0x00043F	п
+	  3,175	       2	0x000440	р
+	  1,587	       1	0x000441	с
+	  6,349	       4	0x000442	т
+	  3,175	       2	0x000443	у
+	  1,587	       1	0x000447	ч
+	  6,349	       4	0x00044A	ъ
+'</code></pre>
+<h3>2. Аsciinema</h3>
+<p>Asciinema позволява да се записват и възпроизвеждат терминалните сесии. Но не по традиционния начин за записване екрана – записите се запазват като <strong>cast</strong> файл, който съдържа информация за въведените команди, за да може да се възпроизведат по-късно. Това прави файловете много по-малки от обикновено видео. На дистрибуции на Ubuntu може да се инсталира с:</p>
+<pre class="language-bash line-numbers"><code>apt install asciinema</code></pre>
+<p>Записи може да са направят с командата:</p>
+<pre class="language-bash line-numbers"><code>asciinema rec filename.cast</code></pre>
+<p>И после да се възпроизвеждат така:</p>
+<pre class="language-bash line-numbers"><code>asciinema play path/to/recording.cast</code></pre>
+<h3>3. Cava</h3>
+<p>Cava е по-графична от другите инструменти споменати тук, защото се използва за визуализиране на звук. Инсталира се с:</p>
+<pre class="language-bash line-numbers"><code>sudo apt install cava</code></pre>
+<p>И е лесна за използване – стартира се с:</p>
+<pre class="language-bash line-numbers"><code>cava</code></pre>
+<p>След изпълнение би трябвало да виждате бели стълбчета, отговарящи на силата на звука. Отворете аудио запис за да пробвате. Може да персонализирате цвета, броя и ширината на стълбчетата в config файла на cava, който обикновено се намира в <em><strong>~/.config/cava/config</strong></em></p>
+<h3>4. img2wav</h3>
+<p>Със img2wav може изображение да се превърне в звук – това става като се възпроизвеждат определени честоти, така че спектрограмата на аудиото да заприлича на изображението. Ефектът може да се види в Audacity, като се избере изглед на спектрограма. За инсталиране:</p>
+<pre class="language-bash line-numbers"><code>apt install img2wav</code></pre>
+<p>После, за да генерирате wav файл:</p>
+<pre class="language-bash line-numbers"><code>img2wav your-image.png</code></pre>
+<p>По този начин могат да се скриват съобщения в спектрограмата на аудио файлове.</p>
+<figure class="post__image" ><img loading="lazy" src="https://kaloyan-projects.github.io/media/posts/9/Snimka-ot-2024-09-30-13-23-30.png" alt="" width="1156" height="523">
+<figcaption >Скрито съобщение на спектрограма в Audacity</figcaption>
+</figure>
+<h3>5. ExifTool</h3>
+<p>ExifTool е апликация за редактиране на метаданни на различни типове файлове. Може да се инсталира с:</p>
+<pre class="language-bash line-numbers"><code>apt install libimage-exiftool-perl</code></pre>
+<p>Ето примери как може да се ползва ExifTool:</p>
+<pre class="language-bash line-numbers"><code># Добавяне на съобщение "Здравей!" в метаданните на PDF документ
+exiftool -Greeting="Здравей!" document.pdf
+# Изписване на метаданните на mp3 файл
+exiftool --list audio.mp3
+
+# Примерен изход за изображение, редактирано с GIMP:
+:'
+ExifTool Version Number         : 12.40
+File Name                       : .face
+Directory                       : .
+File Size                       : 20 KiB
+File Modification Date/Time     : 2023:05:14 10:06:35+03:00
+File Access Date/Time           : 2024:09:29 19:52:35+03:00
+File Inode Change Date/Time     : 2023:05:14 10:06:35+03:00
+File Permissions                : -rw-r--r--
+File Type                       : PNG
+File Type Extension             : png
+MIME Type                       : image/png
+Image Width                     : 96
+Image Height                    : 96
+Bit Depth                       : 8
+Color Type                      : RGB
+Compression                     : Deflate/Inflate
+Filter                          : Adaptive
+Interlace                       : Noninterlaced
+Profile Name                    : ICC Profile
+Profile CMM Type                : Little CMS
+Profile Version                 : 4.3.0
+Profile Class                   : Display Device Profile
+Color Space Data                : RGB
+Profile Connection Space        : XYZ
+Profile Date Time               : 2023:05:14 07:05:56
+Profile File Signature          : acsp
+Primary Platform                : Apple Computer Inc.
+CMM Flags                       : Not Embedded, Independent
+Device Manufacturer             : 
+Device Model                    : 
+Device Attributes               : Reflective, Glossy, Positive, Color
+Rendering Intent                : Perceptual
+Connection Space Illuminant     : 0.9642 1 0.82491
+Profile Creator                 : Little CMS
+Profile ID                      : 0
+Profile Description             : GIMP built-in sRGB
+Profile Copyright               : Public Domain
+Media White Point               : 0.9642 1 0.82491
+Chromatic Adaptation            : 1.04788 0.02292 -0.05022 0.02959 0.99048 -0.01707 -0.00925 0.01508 0.75168
+Red Matrix Column               : 0.43604 0.22249 0.01392
+Blue Matrix Column              : 0.14305 0.06061 0.71393
+Green Matrix Column             : 0.38512 0.7169 0.09706
+Red Tone Reproduction Curve     : (Binary data 32 bytes, use -b option to extract)
+Green Tone Reproduction Curve   : (Binary data 32 bytes, use -b option to extract)
+Blue Tone Reproduction Curve    : (Binary data 32 bytes, use -b option to extract)
+Chromaticity Channels           : 3
+Chromaticity Colorant           : Unknown (0)
+Chromaticity Channel 1          : 0.64 0.33002
+Chromaticity Channel 2          : 0.3 0.60001
+Chromaticity Channel 3          : 0.15001 0.06
+Device Mfg Desc                 : GIMP
+Device Model Desc               : sRGB
+Exif Byte Order                 : Little-endian (Intel, II)
+Image Description               : Created with GIMP
+Orientation                     : Horizontal (normal)
+X Resolution                    : 300
+Y Resolution                    : 300
+Resolution Unit                 : inches
+Software                        : GIMP 2.10.30
+Modify Date                     : 2023:05:14 10:06:19
+User Comment                    : Created with GIMP
+Color Space                     : sRGB
+Subfile Type                    : Reduced-resolution image
+Bits Per Sample                 : 8 8 8
+Photometric Interpretation      : YCbCr
+Samples Per Pixel               : 3
+Thumbnail Offset                : 354
+Thumbnail Length                : 7019
+Image Size                      : 96x96
+Megapixels                      : 0.009
+Thumbnail Image                 : (Binary data 7019 bytes, use -b option to extract)
+'</code></pre>
+<h3>6. Tmux</h3>
+<p>Tmux позволява да разделим терминалния прозорец и да работим на няколко сесии едновременно. За инсталация на пакета:</p>
+<pre class="language-bash line-numbers"><code>apt install tmux</code></pre>
+<p>После, за стартиране на tmux:</p>
+<pre class="language-bash line-numbers"><code>tmux</code></pre>
+<p>Всички клавишни комбинации за tmux започват с Ctrl+B, за да се избегне припокриване с други комбинации. За да разделите прозореца хоризонтално, използвайте <strong><em>" (Shift+')</em></strong>, и вертикално със <em><strong>% (Shift+5)</strong></em>. За да навигирате между прозорците, използвайте стрелките (не забравяйте Ctrl+B преди това).</p>
+<h3>7. qrencode</h3>
+<p>С qrencode може да генерираме QR кодове от терминала. Може да се инсталира така:</p>
+<pre class="language-bash line-numbers"><code>apt install qrencode</code></pre>
+<p>И е много лесен е за употреба:</p>
+<pre class="language-bash line-numbers"><code># Генериране на QR код "пробен текст"
+qrencode "пробен текст" -o qr_code.svg</code></pre>
+<figure class="post__image"><span style="color: var(--text-primary-color); font-family: var(--editor-font-family); font-size: inherit; font-weight: var(--font-weight-normal);">Резултат:</span><img loading="lazy"  style="color: var(--text-primary-color); font-family: var(--editor-font-family); font-size: inherit; font-weight: var(--font-weight-normal);" src="https://kaloyan-projects.github.io/media/posts/9/qr_code.png" alt="" width="99" height="99"></figure>
+<h3>8. fzf</h3>
+<p>fzf (fuzzy finder) е много полезен при търсене на файлове. Бръз е, и работи дори да пропуснете някой знак при търсене.</p>
+<pre class="language-bash line-numbers"><code>apt install fzf</code></pre>
+<p>Стартиране:</p>
+<pre class="language-bash line-numbers"><code>fzf</code></pre>
+<h1>Бонус програми</h1>
+<p>Не всички програми трябва да са полезни. Понякога просто искаме да се забавляваме. Има и команди, предназначени точно за това. Ето някои от тях:</p>
+<h3>9. cowsay</h3>
+<p>cowsay изобразява говореща крава. Може да напишете какво да казва.</p>
+<pre class="language-bash line-numbers"><code># Инсталация
+apt install cowsay
+
+# Употреба
+cowsay "Здравей!"
+
+:'
+Резултат:
+ __________
+&lt; Здравей! &gt;
+ ----------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+'</code></pre>
+<p>Но не е задължително да е крава – може да изберете измежду наличните модели, за да видите кои са те използвайте:</p>
+<pre class="language-bash line-numbers"><code>cowsay -l</code></pre>
+<p>Ето един от тях:</p>
+<pre class="language-bash line-numbers"><code>cowsay -f fox "Лисица!"
+
+:'
+ _________
+&lt; Лисица! &gt;
+ ---------
+         \     ,-.      .-,
+          \    |-.\ __ /.-|
+           \   \  `    `  /
+                /_     _ \
+              &lt;  _`q  p _  &gt;
+              &lt;.._=/  \=_. &gt;
+                 {`\()/`}`\
+                 {      }  \
+                 |{    }    \
+                 \  --    .- \
+                 |-      /    \
+                 | | | | |     ;
+                 | | |.;.,..__ |
+               .-  ;`         `|
+              /    |           /
+              `-../____,..--- `
+
+'</code></pre>
+<h3>10. oneko</h3>
+<p>Командата oneko призовава коте, което гони мишката (курсора). За да прекратите програмата, натиснете Ctrl+C</p>
+<pre class="language-bash line-numbers"><code># Инсталация
+apt install oneko
+
+oneko
+
+# Показва куче вместо коте
+oneko -dog</code></pre>
+<h3>11. lolcat</h3>
+<p>lolcat оцветява текста в цветовете на дъгата.</p>
+<pre class="language-bash line-numbers"><code># Инсталация
+apt install lolcat
+
+# Употреба
+echo "Цветен текст" | lolcat</code></pre>
+<h3>12. cmatrix</h3>
+<p>cmatrix създава известния ефект от Матрицата, с текст, падащ надолу.</p>
+<pre class="language-bash line-numbers"><code># Инсталация
+apt install cmatrix
+
+# Употреба
+cmatrix</code></pre>
+<h3>13. cbonsai</h3>
+<p>cbonsai е генератор на бонсай дръвчета. Позволява да се виждат отделните етапи на растеж.</p>
+<pre class="language-bash line-numbers"><code># Инсталация
+apt install cbonsai
+
+# Употреба
+cbonsai
+
+# Покажи растеж (0,002 секунди между всяка стъпка)
+cbonsai -lt 0,002
+
+# Продължавай да генерираш дървета на всеки 2 секунди
+cbonsai -iw 2
+
+:'
+Резултат
+                                &amp;
+                                &amp;&amp; &amp;
+                                  &amp;&amp;&amp;&amp;&amp;&amp;&amp;
+                            &amp;    &amp;&amp;|&amp;&amp;&amp;&amp;
+                              &amp;&amp;&amp;&amp;&amp;\&amp;&amp;&amp;&amp;&amp;&amp;
+                             &amp;&amp;&amp;&amp;&amp;~\\&amp;&amp;&amp;\
+                          &amp;  &amp;&amp;&amp; &amp;/&amp; /|\ &amp;
+                           &amp;&amp;&amp;&amp;&amp;&amp;|\&amp;&amp;|&amp;&amp;&amp;
+                            &amp;&amp;\&amp;/|&amp;&amp;\&amp;/~\_
+                            &amp;&amp;&amp;&amp;|/|/|&amp;/|\
+                             &amp;&amp;&amp;||/ \|\|
+                             &amp;  /~&amp;  /|\|\&amp;&amp;
+                                 \|  |//&amp;\   /
+                                  /~/_&amp;/&amp;&amp;_&amp;&amp;_/&amp;&amp;&amp;
+                                 /|\//&amp;&amp;/  &amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;
+                                 /|\|//&amp;    &amp;&amp;  &amp;&amp;&amp;
+                                 /~|~/_/ &amp;  &amp;&amp; &amp;&amp; &amp;&amp;
+                                  \/~/  / &amp;/&amp;&amp;&amp;_&amp;&amp;&amp;
+                                  \/~|   // &amp;_&amp;&amp;&amp;
+                                    /~|  _/
+                                      /~|
+                                        /~~
+                         :___________./~~~\.___________:
+                          \                           / 
+                           \_________________________/ 
+                           (_)                     (_)
+'</code></pre>
+            ]]>
+        </content>
+    </entry>
     <entry>
         <title>Превод на постове</title>
         <author>
