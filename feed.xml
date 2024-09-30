@@ -3,7 +3,7 @@
     <title>Портфолио на Калоян</title>
     <link href="https://kaloyan-projects.github.io/feed.xml" rel="self" />
     <link href="https://kaloyan-projects.github.io" />
-    <updated>2024-09-30T14:56:23+03:00</updated>
+    <updated>2024-09-30T14:57:44+03:00</updated>
     <author>
         <name>Калоян</name>
     </author>
@@ -20,6 +20,7 @@
             <category term="Списък"/>
             <category term="Любопитно"/>
             <category term="Линукс"/>
+            <category term="Команди"/>
 
         <updated>2024-09-30T12:07:08+03:00</updated>
             <summary>
