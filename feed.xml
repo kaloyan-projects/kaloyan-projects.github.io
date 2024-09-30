@@ -3,7 +3,7 @@
     <title>Портфолио на Калоян</title>
     <link href="https://kaloyan-projects.github.io/feed.xml" rel="self" />
     <link href="https://kaloyan-projects.github.io" />
-    <updated>2024-09-30T14:57:44+03:00</updated>
+    <updated>2024-09-30T14:59:56+03:00</updated>
     <author>
         <name>Калоян</name>
     </author>
@@ -14,8 +14,8 @@
         <author>
             <name>Калоян</name>
         </author>
-        <link href="https://kaloyan-projects.github.io/10-instrumenti-za-komandniya-red-na-linuks/"/>
-        <id>https://kaloyan-projects.github.io/10-instrumenti-za-komandniya-red-na-linuks/</id>
+        <link href="https://kaloyan-projects.github.io/8-linux-command-line-tools/"/>
+        <id>https://kaloyan-projects.github.io/8-linux-command-line-tools/</id>
         <media:content url="https://kaloyan-projects.github.io/media/posts/9/post-thumbnail-3.png" medium="image" />
             <category term="Списък"/>
             <category term="Любопитно"/>
