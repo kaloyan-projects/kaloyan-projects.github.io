@@ -1,0 +1,218 @@
+<!DOCTYPE html><html lang="bg"><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>8 Linux command-line tools - Портфолио на Калоян</title><meta name="description" content="1. Uniutils Uniutils is a package of usefull commands for Unicode. It&hellip;"><meta name="generator" content="Publii Open-Source CMS for Static Site"><link rel="stylesheet" href="https://kaloyan-projects.github.io/media/plugins/syntaxHighlighter/prism-black.css"><link rel="canonical" href="https://kaloyan-projects.github.io/8-linux-command-line-tools-2/"><link rel="alternate" type="application/atom+xml" href="https://kaloyan-projects.github.io/feed.xml"><link rel="alternate" type="application/json" href="https://kaloyan-projects.github.io/feed.json"><meta property="og:title" content="8 Linux command-line tools"><meta property="og:image" content="https://kaloyan-projects.github.io/media/posts/10/post-thumbnail-3.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="900"><meta property="og:site_name" content="Портфолио на Калоян"><meta property="og:description" content="1. Uniutils Uniutils is a package of usefull commands for Unicode. It&hellip;"><meta property="og:url" content="https://kaloyan-projects.github.io//8-linux-command-line-tools-2/"><meta property="og:type" content="article"><link rel="shortcut icon" href="https://kaloyan-projects.github.io/media/website/favicon.png" type="image/png"><link rel="preload" href="https://kaloyan-projects.github.io/assets/dynamic/fonts/sofiasans/sofiasans.woff2" as="font" type="font/woff2" crossorigin><link rel="stylesheet" href="https://kaloyan-projects.github.io/assets/css/style.css?v=c45e6b33507293857eaee454713782c2"><script type="application/ld+json">{"@context":"http://schema.org","@type":"Article","mainEntityOfPage":{"@type":"WebPage","@id":"https://kaloyan-projects.github.io/8-linux-command-line-tools-2/"},"headline":"8 Linux command-line tools","datePublished":"2024-09-30T14:59","dateModified":"2024-09-30T15:31","image":{"@type":"ImageObject","url":"https://kaloyan-projects.github.io/media/posts/10/post-thumbnail-3.png","height":900,"width":1200},"description":"1. Uniutils Uniutils is a package of usefull commands for Unicode. It&hellip;","author":{"@type":"Person","name":"Калоян","url":"https://kaloyan-projects.github.io/authors/kaloyan/"},"publisher":{"@type":"Organization","name":"Калоян","logo":{"@type":"ImageObject","url":"https://kaloyan-projects.github.io/media/website/logo-2.svg","height":604,"width":1392}}}</script><noscript><style>img[loading] {
+                    opacity: 1;
+                }</style></noscript></head><body class="post-template"><div class="container"><header class="header" id="js-header"><a href="https://kaloyan-projects.github.io/" class="logo"><img src="https://kaloyan-projects.github.io/media/website/logo-2.svg" alt="Портфолио на Калоян" width="1392" height="604"></a><nav class="navbar js-navbar"><button class="navbar__toggle js-toggle" aria-label="Меню"><span class="navbar__toggle-box"><span class="navbar__toggle-inner">Меню</span></span></button><ul class="navbar__menu"><li><a href="https://kaloyan-projects.github.io/" target="_self">Начало / Homepage</a></li><li><a href="https://kaloyan-projects.github.io/gallery/" target="_self">Галерия / Gallery</a></li><li><a href="https://kaloyan-projects.github.io/other/" target="_self">Други / Other</a></li><li><a href="https://kaloyan-projects.github.io/about-me/" target="_self">За мен / About me</a></li></ul></nav></header><main class="post"><div class="banner banner--before-content"><p class="msg msg--info" id="langlink">If you see this, JS is not enabled or I am a bad programmer. :(</p><script>var currentURL = window.location.href;
+    
+    if(currentURL.slice(-3)=="-2/") {
+    	document.getElementById("langlink").innerHTML = 
+    "<a href=\"" + currentURL.replace("-2/", "/") + "\">Натиснете тук</a>, за да видите поста на български.";
+    } else {
+    	document.getElementById("langlink").innerHTML = "<a href=\"" + currentURL.replace(/.$/, "") + "-2/" + "\">Click here</a> to view this post in English.";
+    }</script></div><article class="content wrapper"><header class="hero"><p class="content__meta">От <a href="https://kaloyan-projects.github.io/authors/kaloyan/" rel="author" title="Калоян">Калоян</a> Публикувано на <time datetime="2024-09-30T14:59">30.09.2024</time></p><h1 class="content__title">8 Linux command-line tools</h1></header><figure class="content__featured-image post__image--normal"><img src="https://kaloyan-projects.github.io/media/posts/10/post-thumbnail-3.png" loading="eager" height="900" width="1200" alt=""><figcaption>Linux програми за командния ред</figcaption></figure><div class="content__entry"><h3>1. Uniutils</h3><p>Uniutils is a package of usefull commands for Unicode. It can be used to check the names of characters in a text and their positions in the Unicode table, or the frequency of characters in a text and more. It can be installed with the following command in Ubuntu-based distributions:</p><pre class="language-bash line-numbers"><code>apt install uniutils</code></pre><p>One of the commands Uniutils has is <em><strong>uniname</strong></em>. Here's an example of how it can be used:</p><pre class="language-bash line-numbers"><code>echo "Текст." | uniname
+:'
+Output:
+No LINES variable in environment so unable to determine lines per page.
+Using default of 24.
+character  byte       UTF-32   encoded as     glyph   name
+        0          0  000054   54             T      LATIN CAPITAL LETTER T
+        1          1  000065   65             e      LATIN SMALL LETTER E
+        2          2  000078   78             x      LATIN SMALL LETTER X
+        3          3  000074   74             t      LATIN SMALL LETTER T
+        4          4  00002E   2E             .      FULL STOP
+        5          5  00000A   0A                     LINE FEED (LF)
+
+'</code></pre><p>With <em><strong>unihist</strong></em>, we can view the histogram (frequency) of different glyphs in the second column:</p><pre class="language-bash line-numbers"><code>echo 'This sentence contains the letter "e" 12 times and the letter "s" 6 times' | unihist
+:'
+Output:
+	  1,351	       1	0x00000A
+	 17,568	      13	0x000020
+	  5,405	       4	0x000022	"
+	  1,351	       1	0x000031	1
+	  1,351	       1	0x000032	2
+	  1,351	       1	0x000036	6
+	  1,351	       1	0x000054	T
+	  2,703	       2	0x000061	a
+	  2,703	       2	0x000063	c
+	  1,351	       1	0x000064	d
+	 16,216	      12	0x000065	e
+	  4,054	       3	0x000068	h
+	  5,405	       4	0x000069	i
+	  2,703	       2	0x00006C	l
+	  2,703	       2	0x00006D	m
+	  6,757	       5	0x00006E	n
+	  1,351	       1	0x00006F	o
+	  2,703	       2	0x000072	r
+	  8,108	       6	0x000073	s
+	 13,514	      10	0x000074	t
+'</code></pre><h3>2. Аsciinema</h3><p>Asciinema is used to record and play back terminal sessions. Not in the traditional way you might record your screen – recordings are saved as a <strong>cast</strong> file, which contains information about the entered commands, so that they can be played back later. These files are much smaller than a typical video. On Ubuntu-based distributions it can be installed with:</p><pre class="language-bash line-numbers"><code>apt install asciinema</code></pre><p>Recordings can be started with:</p><pre class="language-bash line-numbers"><code>asciinema rec filename.cast</code></pre><p>And to play back a recording you can use:</p><pre class="language-bash line-numbers"><code>asciinema play path/to/recording.cast</code></pre><h3>3. Cava</h3><p>Cava is more graphical compared to other tools on this list, because it's used to visualize sound. It can be installed with:</p><pre class="language-bash line-numbers"><code>sudo apt install cava</code></pre><p>And it's simple to use – start it with:</p><pre class="language-bash line-numbers"><code>cava</code></pre><p>After that you should see white bars moving based on the captured sound. You can play some audio and check it out. You can customize the color, quantity and width of the bars in canva's config file, usually found in <em><strong>~/.config/cava/config</strong></em></p><h3>4. img2wav</h3><p>With img2wav you can convert images to sound – by outputting certain frequencies, the audio's spectrogram can take the shape of the inputted image. The effect can be seen in programs like Audacity, by selecting spectrogram view. To install:</p><pre class="language-bash line-numbers"><code>apt install img2wav</code></pre><p>You can generate a wav file like so:</p><pre class="language-bash line-numbers"><code>img2wav your-image.png</code></pre><p>That can be used to hide messages in an audio's spectrogram.</p><figure class="post__image"><img loading="lazy" src="https://kaloyan-projects.github.io/media/posts/10/Snimka-ot-2024-09-30-13-23-30.png" alt="" width="1156" height="523"><figcaption>Hidden message in a spectrogram viewed Audacity</figcaption></figure><h3>5. ExifTool</h3><p>ExifTool is an application for editing the metadata of different file types. You can install it with:</p><pre class="language-bash line-numbers"><code>apt install libimage-exiftool-perl</code></pre><p>Here's how you can use ExifTool:</p><pre class="language-bash line-numbers"><code># Adding a greeting "Hello!" in the metadata of a PDF document
+exiftool -Greeting="Hello!" document.pdf
+# Outputting the metadata of an mp3 file
+exiftool --list audio.mp3
+
+# Example of outputting the metadata of an image edited in GIMP:
+:'
+ExifTool Version Number         : 12.40
+File Name                       : .face
+Directory                       : .
+File Size                       : 20 KiB
+File Modification Date/Time     : 2023:05:14 10:06:35+03:00
+File Access Date/Time           : 2024:09:29 19:52:35+03:00
+File Inode Change Date/Time     : 2023:05:14 10:06:35+03:00
+File Permissions                : -rw-r--r--
+File Type                       : PNG
+File Type Extension             : png
+MIME Type                       : image/png
+Image Width                     : 96
+Image Height                    : 96
+Bit Depth                       : 8
+Color Type                      : RGB
+Compression                     : Deflate/Inflate
+Filter                          : Adaptive
+Interlace                       : Noninterlaced
+Profile Name                    : ICC Profile
+Profile CMM Type                : Little CMS
+Profile Version                 : 4.3.0
+Profile Class                   : Display Device Profile
+Color Space Data                : RGB
+Profile Connection Space        : XYZ
+Profile Date Time               : 2023:05:14 07:05:56
+Profile File Signature          : acsp
+Primary Platform                : Apple Computer Inc.
+CMM Flags                       : Not Embedded, Independent
+Device Manufacturer             : 
+Device Model                    : 
+Device Attributes               : Reflective, Glossy, Positive, Color
+Rendering Intent                : Perceptual
+Connection Space Illuminant     : 0.9642 1 0.82491
+Profile Creator                 : Little CMS
+Profile ID                      : 0
+Profile Description             : GIMP built-in sRGB
+Profile Copyright               : Public Domain
+Media White Point               : 0.9642 1 0.82491
+Chromatic Adaptation            : 1.04788 0.02292 -0.05022 0.02959 0.99048 -0.01707 -0.00925 0.01508 0.75168
+Red Matrix Column               : 0.43604 0.22249 0.01392
+Blue Matrix Column              : 0.14305 0.06061 0.71393
+Green Matrix Column             : 0.38512 0.7169 0.09706
+Red Tone Reproduction Curve     : (Binary data 32 bytes, use -b option to extract)
+Green Tone Reproduction Curve   : (Binary data 32 bytes, use -b option to extract)
+Blue Tone Reproduction Curve    : (Binary data 32 bytes, use -b option to extract)
+Chromaticity Channels           : 3
+Chromaticity Colorant           : Unknown (0)
+Chromaticity Channel 1          : 0.64 0.33002
+Chromaticity Channel 2          : 0.3 0.60001
+Chromaticity Channel 3          : 0.15001 0.06
+Device Mfg Desc                 : GIMP
+Device Model Desc               : sRGB
+Exif Byte Order                 : Little-endian (Intel, II)
+Image Description               : Created with GIMP
+Orientation                     : Horizontal (normal)
+X Resolution                    : 300
+Y Resolution                    : 300
+Resolution Unit                 : inches
+Software                        : GIMP 2.10.30
+Modify Date                     : 2023:05:14 10:06:19
+User Comment                    : Created with GIMP
+Color Space                     : sRGB
+Subfile Type                    : Reduced-resolution image
+Bits Per Sample                 : 8 8 8
+Photometric Interpretation      : YCbCr
+Samples Per Pixel               : 3
+Thumbnail Offset                : 354
+Thumbnail Length                : 7019
+Image Size                      : 96x96
+Megapixels                      : 0.009
+Thumbnail Image                 : (Binary data 7019 bytes, use -b option to extract)
+'</code></pre><h3>6. Tmux</h3><p>Tmux allows you to split the terminal window and work on multiple sessions at once. To install the package:</p><pre class="language-bash line-numbers"><code>apt install tmux</code></pre><p>Then, to start tmux:</p><pre class="language-bash line-numbers"><code>tmux</code></pre><p>All keyboard shortcuts in tmux start with Ctrl+B, to avoid overlap with other shortcuts. To split the view horizontally <strong><em>" (Shift+')</em></strong>, and vertically <em><strong>% (Shift+5)</strong></em>. To move around the windows use the arrow keys (don't forget the Ctrl+B prefix).</p><h3>7. qrencode</h3><p>With qrencode you can generate QR codes from the terminal. You can install it with:</p><pre class="language-bash line-numbers"><code>apt install qrencode</code></pre><p>And using it is very simple:</p><pre class="language-bash line-numbers"><code># Generate a qr code "пробен текст"
+qrencode "пробен текст" -o qr_code.svg</code></pre><figure class="post__image"><span style="color: var(--text-primary-color); font-family: var(--editor-font-family); font-size: inherit; font-weight: var(--font-weight-normal);">Output:</span><img loading="lazy" style="color: var(--text-primary-color); font-family: var(--editor-font-family); font-size: inherit; font-weight: var(--font-weight-normal);" src="https://kaloyan-projects.github.io/media/posts/10/qr_code.png" alt="" width="99" height="99"></figure><h3>8. fzf</h3><p>fzf (fuzzy finder) is great for searching files. It's fast and allows for typos.</p><pre class="language-bash line-numbers"><code>apt install fzf</code></pre><p>Start with:</p><pre class="language-bash line-numbers"><code>fzf</code></pre><h1>Бонус програми</h1><p>Not all programs have to be usefull. Sometimes they can just be fun. Some commands are exactly for that. Here are some:</p><h3>9. cowsay</h3><p>cowsay prints a talking cow. You can specify what it says.</p><pre class="language-bash line-numbers"><code># Installation
+apt install cowsay
+
+# Usage
+cowsay "Hello!"
+
+:'
+Output:
+ __________
+&lt; Hello! &gt;
+ ----------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+'</code></pre><p>It doesn't have to be a cow – you can choose between avaliable models, to check them use:</p><pre class="language-bash line-numbers"><code>cowsay -l</code></pre><p>Here's one of them:</p><pre class="language-bash line-numbers"><code>cowsay -f fox "Fox!"
+
+:'
+ _________
+&lt; Fox! &gt;
+ ---------
+         \     ,-.      .-,
+          \    |-.\ __ /.-|
+           \   \  `    `  /
+                /_     _ \
+              &lt;  _`q  p _  &gt;
+              &lt;.._=/  \=_. &gt;
+                 {`\()/`}`\
+                 {      }  \
+                 |{    }    \
+                 \  --    .- \
+                 |-      /    \
+                 | | | | |     ;
+                 | | |.;.,..__ |
+               .-  ;`         `|
+              /    |           /
+              `-../____,..--- `
+
+'</code></pre><h3>10. oneko</h3><p>The oneko command summons a cat chasing the mouse cursor. To stop the program, press Ctrl+C</p><pre class="language-bash line-numbers"><code># Installation
+apt install oneko
+
+oneko
+
+# Outputs dog instead of cat
+oneko -dog</code></pre><h3>11. lolcat</h3><p>lolcat simply colors the input text in the colors of the rainbow.</p><pre class="language-bash line-numbers"><code># Installation
+apt install lolcat
+
+# Usage
+echo "Цветен текст" | lolcat</code></pre><h3>12. cmatrix</h3><p>cmatrix creates the famous Matrix effect, with the letters scrolling down.</p><pre class="language-bash line-numbers"><code># Installation
+apt install cmatrix
+
+# Usage
+cmatrix</code></pre><h3>13. cbonsai</h3><p>cbonsai is a bonsai tree generator. It allows for viewing the different steps of growth.</p><pre class="language-bash line-numbers"><code># Installation
+apt install cbonsai
+
+# Usage
+cbonsai
+
+# Show growth (0,002 seconds between each step)
+cbonsai -lt 0,002
+
+# Continue generating trees every 2 seconds
+cbonsai -iw 2
+
+:'
+Output
+                                &amp;
+                                &amp;&amp; &amp;
+                                  &amp;&amp;&amp;&amp;&amp;&amp;&amp;
+                            &amp;    &amp;&amp;|&amp;&amp;&amp;&amp;
+                              &amp;&amp;&amp;&amp;&amp;\&amp;&amp;&amp;&amp;&amp;&amp;
+                             &amp;&amp;&amp;&amp;&amp;~\\&amp;&amp;&amp;\
+                          &amp;  &amp;&amp;&amp; &amp;/&amp; /|\ &amp;
+                           &amp;&amp;&amp;&amp;&amp;&amp;|\&amp;&amp;|&amp;&amp;&amp;
+                            &amp;&amp;\&amp;/|&amp;&amp;\&amp;/~\_
+                            &amp;&amp;&amp;&amp;|/|/|&amp;/|\
+                             &amp;&amp;&amp;||/ \|\|
+                             &amp;  /~&amp;  /|\|\&amp;&amp;
+                                 \|  |//&amp;\   /
+                                  /~/_&amp;/&amp;&amp;_&amp;&amp;_/&amp;&amp;&amp;
+                                 /|\//&amp;&amp;/  &amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;
+                                 /|\|//&amp;    &amp;&amp;  &amp;&amp;&amp;
+                                 /~|~/_/ &amp;  &amp;&amp; &amp;&amp; &amp;&amp;
+                                  \/~/  / &amp;/&amp;&amp;&amp;_&amp;&amp;&amp;
+                                  \/~|   // &amp;_&amp;&amp;&amp;
+                                    /~|  _/
+                                      /~|
+                                        /~~
+                         :___________./~~~\.___________:
+                          \                           / 
+                           \_________________________/ 
+                           (_)                     (_)
+'</code></pre></div><footer class="content__footer"><div class="content__last-updated">Последно актуализиран на 30.09.2024</div><div class="content__footer__col"><ul class="content__tag"><li><a href="https://kaloyan-projects.github.io/tags/commands/">Команди</a></li><li><a href="https://kaloyan-projects.github.io/tags/design/">Линукс</a></li><li><a href="https://kaloyan-projects.github.io/tags/trivia/">Любопитно</a></li><li><a href="https://kaloyan-projects.github.io/tags/list/">Списък</a></li></ul><div class="content__share"></div></div></footer></article></main><footer class="footer"><div class="footer__copyright">Powered by Publii</div></footer></div><script defer="defer" src="https://kaloyan-projects.github.io/assets/js/scripts.min.js?v=4268bfae06e330d473c424d50f09abda"></script><script>window.publiiThemeMenuConfig={mobileMenuMode:'sidebar',animationSpeed:300,submenuWidth: 'auto',doubleClickTime:500,mobileMenuExpandableSubmenus:true,relatedContainerForOverlayMenuSelector:'.navbar'};</script><script>/*<![CDATA[*/var images=document.querySelectorAll("img[loading]");for(var i=0;i<images.length;i++){if(images[i].complete){images[i].classList.add("is-loaded")}else{images[i].addEventListener("load",function(){this.classList.add("is-loaded")},false)}};/*]]>*/</script><script defer="defer" src="https://kaloyan-projects.github.io/media/plugins/syntaxHighlighter/prism.js"></script><script defer="defer" src="https://kaloyan-projects.github.io/media/plugins/syntaxHighlighter/prism-line-numbers.min.js"></script><script defer="defer" src="https://kaloyan-projects.github.io/media/plugins/syntaxHighlighter/clipboard.min.js"></script><script defer="defer" src="https://kaloyan-projects.github.io/media/plugins/syntaxHighlighter/prism-copy-to-clipboard.min.js"></script></body></html>
