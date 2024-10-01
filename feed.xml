@@ -3,7 +3,7 @@
     <title>Портфолио на Калоян</title>
     <link href="https://kaloyan-projects.github.io/feed.xml" rel="self" />
     <link href="https://kaloyan-projects.github.io" />
-    <updated>2024-10-01T10:59:24+03:00</updated>
+    <updated>2024-10-01T11:14:51+03:00</updated>
     <author>
         <name>Калоян</name>
     </author>
@@ -14,17 +14,22 @@
         <author>
             <name>Калоян</name>
         </author>
-        <link href="https://kaloyan-projects.github.io/vektorni-i-rasterni-faylovi-formati/"/>
-        <id>https://kaloyan-projects.github.io/vektorni-i-rasterni-faylovi-formati/</id>
+        <link href="https://kaloyan-projects.github.io/raster-and-vector-graphics/"/>
+        <id>https://kaloyan-projects.github.io/raster-and-vector-graphics/</id>
+        <media:content url="https://kaloyan-projects.github.io/media/posts/11/post-thumbnail-4.png" medium="image" />
+            <category term="Растерна графика"/>
+            <category term="Векторна графика"/>
 
         <updated>2024-10-01T10:13:39+03:00</updated>
             <summary>
                 <![CDATA[
+                        <img src="https://kaloyan-projects.github.io/media/posts/11/post-thumbnail-4.png" alt="" />
                     Разлики между растери и вектори Когато искаме да представим нещо графично на&hellip;
                 ]]>
             </summary>
         <content type="html">
             <![CDATA[
+                    <p><img src="https://kaloyan-projects.github.io/media/posts/11/post-thumbnail-4.png" class="type:primaryImage" alt="" /></p>
                 <h1>Разлики между растери и вектори</h1>
 <p>Когато искаме да представим нещо графично на компютър, има два главни начина да го постигнем – векторно и растерно. Кое е по-подходящо зависи от това какво целим.</p>
 <p>Всички снимки, например, са растерни. Това означава, че са съставени от множество пиксели, съдържащи информация за цвят, обикновено в трите цветови канала – червено, зелено и синьо. При векторната графика, от друга страна, няма пиксели, а точки, криви и фигури.</p>
