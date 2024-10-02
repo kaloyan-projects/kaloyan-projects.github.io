@@ -3,12 +3,89 @@
     <title>Портфолио на Калоян</title>
     <link href="https://kaloyan-projects.github.io/feed.xml" rel="self" />
     <link href="https://kaloyan-projects.github.io" />
-    <updated>2024-10-01T14:36:10+03:00</updated>
+    <updated>2024-10-02T19:18:02+03:00</updated>
     <author>
         <name>Калоян</name>
     </author>
     <id>https://kaloyan-projects.github.io</id>
 
+    <entry>
+        <title>Вграждане, редакция и извличане на субтитри</title>
+        <author>
+            <name>Калоян</name>
+        </author>
+        <link href="https://kaloyan-projects.github.io/subtitle-editing-embedding-and-extraction/"/>
+        <id>https://kaloyan-projects.github.io/subtitle-editing-embedding-and-extraction/</id>
+        <media:content url="https://kaloyan-projects.github.io/media/posts/13/post-thumbnail-5.png" medium="image" />
+            <category term="Субтитри"/>
+            <category term="Превод"/>
+            <category term="Езици"/>
+            <category term="Видео редакция"/>
+            <category term="Kdenlive"/>
+            <category term="HandBrake"/>
+
+        <updated>2024-10-02T17:03:41+03:00</updated>
+            <summary>
+                <![CDATA[
+                        <img src="https://kaloyan-projects.github.io/media/posts/13/post-thumbnail-5.png" alt="" />
+                    Субтитри! Не винаги разполагаме с дублаж, а и не винаги го предпочитаме,&hellip;
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                    <p><img src="https://kaloyan-projects.github.io/media/posts/13/post-thumbnail-5.png" class="type:primaryImage" alt="" /></p>
+                <p>Субтитри! Не винаги разполагаме с дублаж, а и не винаги го предпочитаме, затова понякога се налага да четем субтитри. Но ако няма, как може да си направим? А ако имат грешки и трябва да ги поправим? Нека да разгледаме.</p>
+<h1>Субтитрови формати</h1>
+<p>Има няколко преобладаващи формати при субтитрите, в зависимост от това, което целим с тях.</p>
+<h3>SRT</h3>
+<p>Този формат поддържа най-основно форматиране на текста, като позволява той да бъде наклонен, удебелен, подчетран и да се определи мястото му и шрифта му. SRT форматът запазва субтитрите по много прост начин. Започва с поредния им номер, на следващия ред – времето на появяване и скриване, и след това – самите субтитри. Изглежда по следния начин:</p>
+<pre class="language-markdown line-numbers"><code>1
+00:00:27,533 --&gt; 00:00:28,766
+Това са първите субтитри
+
+2
+00:00:29,233 --&gt; 00:00:29,966
+Това са вторите субтитри
+и са на два реда
+
+3
+00:00:30,933 --&gt; 00:00:31,266
+&lt;i&gt;Тези субтитри са наклонени&lt;/i&gt;
+
+4
+00:00:32,533 --&gt; 00:00:34,433
+&lt;b&gt;А тези са удебелени&lt;/b&gt;</code></pre>
+<h3>ASS</h3>
+<p>ASS форматът поддържа по-сложно форматиране на субтитрите: могат да се анимират, оцветяват, подрязват с маска (която също може да се анимира), да се създават различни стилове и още. За да се възползвате напълно от възможностите на формата, трябва да можете повече от писане на текст. Някои автори даже анимират субтитрите да следват движението на обекти във видеото, за да се създаде илюзията, че текстът е част от самото видео.</p>
+<pre class="language-ini line-numbers"><code>[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:14.44,0:00:18.18,Default,,0,0,0,,{\K34}След {\K34}300 {\K23}ме{\K21}тра
+Dialogue: 0,0:00:18.18,0:00:21.86,Default,,0,0,0,,{\K16}За{\K23}вий{\K16}те {\K13}на{\K16}ля{\K16}во
+Dialogue: 0,0:00:21.86,0:00:25.59,Default,,0,0,0,,{\kf28}Пос{\kf24}ле
+Dialogue: 0,0:00:25.59,0:00:29.90,Default,,0,0,0,,{\K18}Ще {\K66}пристигнете {\K15}на {\K92}местоназначението {\K16}си</code></pre>
+<h1>Писане на субтитри</h1>
+<p>Има различни програми за редакция на субтитри. Ще разгледаме Aegisub, безплатна програма с отворен код. Има три главни части на интерфейса: Превюто на видеото, визуализация на аудиото и, най-отдолу, субтитрите. Може да избирате различен размер на превюто на видеото. За да се запазят промените над субтитрите, трябва да ги приложите. Вляво са инструментите за трансформация (местене, въртене, накланяне и подрязване) на субтитрите. Може да превъртате между кадрите със стрелките наляво и надясно. С <em><strong>Ctrl+3</strong></em> и <em><strong>Ctrl+4</strong></em> задавате началото или края на субтитрите на текущия кадър. Когато сте в аудио прозореца, ляв бутон на мишката задава началото на субтитрите, десен бутон – края, а среден бутон (колелцето) превърта до съответния момент в записа. Когато сме готови, можем да експортираме субтитрите в SRT, ASS, SUB и други формати.</p>
+<figure class="post__image" ><img loading="lazy" src="https://kaloyan-projects.github.io/media/posts/13/Snimka-ot-2024-10-02-18-10-31.png" alt="" width="1115" height="563">
+<figcaption >Редактиране на субтитри в Aegisub</figcaption>
+</figure>
+<p>Все пак не е необходимо да използваме специализирана програма, за да правим субтитри. Програми за видео редакция като Kdenlive също имат такава функционалност, макар и по-ограничена. Но ако искаме само да преведем реч, това е повече от достатъчно. Освен това, отскоро Kdenlive поддържа множество пътечки за субтитри. За да добавите субтитри, отидете в <em><strong>View &gt; Subtitles</strong></em>. Това ще отвори панела за субтитри, ако вече не е отворен. Оттам може да добавяте субтитри с "+" бутона. За да експортирате субтитрите, отидете в <em><strong>Project &gt; Subtitles &gt; Export Subtitle File…</strong></em> С Kdenlive може да експортираме само SRT файл, но в много случаи това е достатъчно.</p>
+<figure class="post__image"><img loading="lazy"  src="https://kaloyan-projects.github.io/media/posts/13/Snimka-ot-2024-10-02-18-03-08.png" alt="" width="694" height="460"><figcaption>Редактиране на субтитри в Kdenlive</figcaption></figure>
+<h1>Начини на вграждане на субтитри</h1>
+<p>Субтитрите ни са готови, но ако искаме да ги видим, трябва всеки път да ги избираме ръчно. Щеше да е много по-лесно ако вече имаше пътечка със субтитри в самото видео. Един видео контейнер е комбинация от различни данни: може да съдържа множество видео пътечки, аудио пътечки и пътечки за субтитри. Ако добавим субтитрите директно в контейнера, няма да има нужда да ги избираме ръчно при отваряне на видеото.</p>
+<p>За да го постигнем, можем да ползваме програма като HandBrake, или даже инструменти за командния ред като FFmpeg. В HandBrake можем просто да изберем "Отвори източник" и после да отидем в Субтитри &gt; Tracks &gt; Add New Track. Оттам избираме език, кодировка на текста и файл, от който да бъдат заредени.</p>
+<figure class="post__image"><img loading="lazy"  src="https://kaloyan-projects.github.io/media/posts/13/Snimka-ot-2024-10-02-18-45-45.png" alt="" width="1075" height="528"><figcaption>Вграждане на субтитри с HandBrake</figcaption></figure>
+<p>С FFmpeg можем да използваме следната команда:</p>
+<pre class="language-bash line-numbers"><code>ffmpeg -i my_video.mp4 -i subtitles.srt -c copy -c:s mov_text my_video_with_subtitles.mp4</code></pre>
+<p>Можем да добавим информация за езика на субтитрите ако уточним:</p>
+<pre class="language-bash line-numbers"><code>ffmpeg -i my_video.mp4 -i subtitles.srt -c:a copy -c:v copy -c:s mov_text -metadata:s:s:0 language=bul my_video_with_subtitles.mp4</code></pre>
+<h1>Извличане на субтитри от видео</h1>
+<p>С FFmpeg може да извлечем субтитри от видеото със следната команда:</p>
+<pre class="language-bash line-numbers"><code>ffmpeg -i video_with_subtitles.mp4 -map 0:s:0 subtitles.srt</code></pre>
+<p>След това може да отворим файла и да го редактираме с Aegisub или друга програма, както е показано по-горе.</p>
+<p> </p>
+            ]]>
+        </content>
+    </entry>
     <entry>
         <title>Растерни и векторни изображения</title>
         <author>
