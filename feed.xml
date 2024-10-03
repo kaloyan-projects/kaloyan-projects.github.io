@@ -3,7 +3,7 @@
     <title>Портфолио на Калоян</title>
     <link href="https://kaloyan-projects.github.io/feed.xml" rel="self" />
     <link href="https://kaloyan-projects.github.io" />
-    <updated>2024-10-04T00:10:41+03:00</updated>
+    <updated>2024-10-04T00:16:18+03:00</updated>
     <author>
         <name>Калоян</name>
     </author>
@@ -16,6 +16,7 @@
         </author>
         <link href="https://kaloyan-projects.github.io/how-to-make-your-own-font/"/>
         <id>https://kaloyan-projects.github.io/how-to-make-your-own-font/</id>
+        <media:content url="https://kaloyan-projects.github.io/media/posts/17/post-thumbnail-7.png" medium="image" />
             <category term="Шрифтове"/>
             <category term="Урок"/>
             <category term="Текст"/>
@@ -24,11 +25,13 @@
         <updated>2024-10-03T21:13:28+03:00</updated>
             <summary>
                 <![CDATA[
+                        <img src="https://kaloyan-projects.github.io/media/posts/17/post-thumbnail-7.png" alt="" />
                     Представяте ли си шрифт, който не съществува? Имате ли идея за дизайн,&hellip;
                 ]]>
             </summary>
         <content type="html">
             <![CDATA[
+                    <p><img src="https://kaloyan-projects.github.io/media/posts/17/post-thumbnail-7.png" class="type:primaryImage" alt="" /></p>
                 <p>Представяте ли си шрифт, който не съществува? Имате ли идея за дизайн, която искате да реализирате? Нито пък аз! Но пък имам уникален ръкопис, който, мисля, би бил подходящ за шрифт. Но как може да направим от ръкописни букви дигитален шрифт, който да може да се инсталира от всеки? Да разгледаме!</p>
 <h1>Да напишем буквите!</h1>
 <p>Шрифтовете съдържат доста знаци. Имайте предвид, че ще трябва да напишете всички букви от азбуката в малък и голям вариант, препинателни знаци, цифри и още символи. Поне 80 знака ще ви бъдат необходими. Препоръчително е да използвате графичен таблет за да пресъздадете ръкописа си. Отворете програма за рисуване, например GIMP, и почнете да пишете. Трябва да бъдете търпеливи. Не всички знаци са приятни за изписване. Когато сте готови, проверете дали не сте пропуснали някой важен знак. Не можем да направим всички, но ето колко може да включите вие:</p>
