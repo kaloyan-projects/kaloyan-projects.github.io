@@ -98,7 +98,7 @@
 </url>
 <url>
 <loc>https://kaloyan-projects.github.io/gallery/</loc>
-<lastmod>2024-10-03T14:31:15+03:00</lastmod>
+<lastmod>2024-10-08T13:55:04+03:00</lastmod>
 <image:image>
 <image:loc>https://kaloyan-projects.github.io/media/posts/3/gallery/abstract-thumbnail.jpg</image:loc>
 <image:title><![CDATA[]]></image:title>
@@ -221,6 +221,10 @@
 </image:image>
 <image:image>
 <image:loc>https://kaloyan-projects.github.io/media/posts/3/gallery/notes-2-thumbnail.png</image:loc>
+<image:title><![CDATA[]]></image:title>
+</image:image>
+<image:image>
+<image:loc>https://kaloyan-projects.github.io/media/posts/3/gallery/aspect-ratios-thumbnail.png</image:loc>
 <image:title><![CDATA[]]></image:title>
 </image:image>
 </url>
